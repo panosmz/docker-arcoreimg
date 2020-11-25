@@ -8,7 +8,7 @@ ARCore SDK's `arcoreimg` tool as an executable Docker image.
 
     docker run --rm \
         -v $(pwd):/arcoreimg \
-        panosmz/docker-arcoreimg eval-img --input_image_path=your-image.jpg
+        panosmz/arcoreimg eval-img --input_image_path=your-image.jpg
 
     # output: Score 0-100 or 'Failed to get enough keypoints from target image.'
 
@@ -16,7 +16,7 @@ ARCore SDK's `arcoreimg` tool as an executable Docker image.
 
     docker run --rm \
         -v $(pwd):/arcoreimg \
-        panosmz/docker-arcoreimg build-db \
+        panosmz/arcoreimg build-db \
             --input_images_directory=./images \
             --output_db_path=./myimages.imgdb
 
